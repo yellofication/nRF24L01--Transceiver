@@ -23,7 +23,6 @@ void setup(){
   blink(numberInt);
   transceiver.txPL(numberInt);
   transceiver.send(SLOW);
-  delay(700);
 }
 
 void loop(){
