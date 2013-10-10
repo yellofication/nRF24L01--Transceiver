@@ -18,11 +18,12 @@ void setup(){
   transceiver.TXaddress(TX_ADDRESS);
   transceiver.RXaddress(RX_ADDRESS);
   transceiver.init();
-  initialised=true; 
   //initial transmit (reset
   blink(numberInt);
   transceiver.txPL(numberInt);
   transceiver.send(SLOW);
+  transceiver.init();
+  initialised=true; 
 }
 
 void loop(){
